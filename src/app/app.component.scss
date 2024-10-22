@@ -1,0 +1,86 @@
+$main-color:#009AD8;
+$second-color:#323544;
+$third-color:#262936;
+$forth-color:#2D303D;
+$item-color:#A3C1C8;
+$bg-color:#1E202B;
+$radius:10px;
+
+.main{
+    min-height: 100vh;
+    background: url('../assets/images/banner.png') no-repeat 100% top $bg-color ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search{
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: $bg-color;
+            border: $main-color solid 2px;
+            padding: 14px 20px;
+            border-radius: $radius;
+            color: white;
+        }
+    }
+    .weather-card{
+        border: solid 2px $main-color;
+        .head{
+            background-color: $forth-color;
+            color: $item-color;
+            span{
+                font-weight: 600;
+            }
+        }
+        .body{
+            background-color: $second-color;
+            height: 450px !important;
+            h2{
+                color: $main-color;
+                font-size: 2em;
+                letter-spacing: 1px;
+                text-align: center;
+                margin: 0;
+            }
+            .degrees{
+                ul{
+                    li{
+                        span{
+                            font-size:2em;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            i{
+                color: $main-color;
+                font-size: 24px;
+            }
+            .condition{
+                p{
+                    color: $main-color;
+                }
+                img{
+                    width: 80px;
+                }
+            }
+            .statics{
+                i{
+                    font-size: 16px;
+                }
+                span{
+                    color: $item-color;
+                }
+            }
+        }
+    }
+    .day{
+        .head{
+            background-color: #222530;
+        }
+        .body{
+            background-color: $third-color;
+        }
+    }
+}
