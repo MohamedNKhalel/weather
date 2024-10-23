@@ -4,7 +4,7 @@
       <input (input)="getWeather()" [(ngModel)]="cityName" type="text" placeholder="Find your location..." />
     </div>
     <div class="row justify-content-center align-items-center g-0 mt-5">
-      <div class="col-md-4" *ngFor="let day of forecastDays ; let i = index ; let even= even">
+      <div class="col-lg-4 col-md-6" *ngFor="let day of forecastDays ; let i = index ; let even= even">
         <div [class.day]="even" class="weather-card">
           <div class="head d-flex justify-content-between align-items-center p-3 px-4">
             <span class="text-capitalize">{{day?.date |date:'EEEE'}}</span>
